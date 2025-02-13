@@ -2,6 +2,7 @@
 import darkSaasLandingPage from "@/assets/images/ss.png";
 import lightSaasLandingPage from "@/assets/images/ecommerce.png";
 import aiStartupLandingPage from "@/assets/images/qbills.png";
+import pixelCode from "@/assets/images/image.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -47,6 +48,19 @@ const portfolioProjects = [
     results: [],
     link: "https://shortener-url-six.vercel.app/",
     image: shortenerUrl,
+  },
+  {
+    company: "CV Serpihan Tech Solution",
+    year: "2024",
+    title: "E-Course - Pixel Code",
+    results: [
+      { title: "Manage the team and fix display bugs" },
+      { title: "Improved SEO of Website" },
+      { title: "Build the eficient website" },
+      { title: "Integrated with captcha Google" },
+    ],
+    link: "https://e-course-phi.vercel.app/",
+    image: pixelCode,
   },
 ];
 
