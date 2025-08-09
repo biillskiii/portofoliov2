@@ -10,7 +10,10 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 export const HeroSection = () => {
   return (
     <div className="py-32 md:pb-48 lg:py-32 relative z-0 overflow-x-clip">
-      <div id="home" className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div
+        id="home"
+        className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"
+      >
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -129,7 +132,11 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a href="https://drive.google.com/file/d/1Kb_BMmrVPSNcpBIKmEsCQLz83GWwpVxM/view?usp=sharing" target="_blank" className="z-50  inline-flex items-center gap-2 border bg-gray-900 hover:bg-gray-900/75 border-white/15 px-6 h-12 rounded-xl">
+          <a
+            href="https://drive.google.com/file/d/1tG_c1j6KKXk2MR5JzWbX8WUQ3Co-GETb/view?usp=sharing"
+            target="_blank"
+            className="z-50  inline-flex items-center gap-2 border bg-gray-900 hover:bg-gray-900/75 border-white/15 px-6 h-12 rounded-xl"
+          >
             <span className="font-semibold">Download CV</span>
             <ArrowDown className="size-4" />
           </a>
