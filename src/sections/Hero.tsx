@@ -133,7 +133,7 @@ export const HeroSection = () => {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
           <a
-            href="https://drive.google.com/file/d/1tG_c1j6KKXk2MR5JzWbX8WUQ3Co-GETb/view?usp=sharing"
+            href="https://drive.google.com/file/d/1rTqxNKob6UUVmR7g0IPXR2WK9GxIO1Mn/view?usp=sharing"
             target="_blank"
             className="z-50  inline-flex items-center gap-2 border bg-gray-900 hover:bg-gray-900/75 border-white/15 px-6 h-12 rounded-xl"
           >
