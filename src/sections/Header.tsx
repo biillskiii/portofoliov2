@@ -1,49 +1,66 @@
-'use client'
-import { useState, useEffect } from "react";
+"use client";
+import { useEffect, useState } from "react";
+
+const sections = ["home", "projects", "about", "contact"];
 
 export const Header = () => {
-  const [activeLink, setActiveLink] = useState<string>("");
+  const [activeLink, setActiveLink] = useState<string>("#home");
 
   useEffect(() => {
-    const handleHashChange = () => {
-      setActiveLink(window.location.hash);
-    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(`#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        threshold: 0.6, 
+      }
+    );
 
-    handleHashChange();
-    window.addEventListener("hashchange", handleHashChange);
-    return () => {
-      window.removeEventListener("hashchange", handleHashChange);
-    };
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <div className="flex justify-center items-center fixed top-3 w-full z-10">
+    <div className="flex justify-center items-center fixed top-8 w-full z-10">
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
-        <a
-          href="#home"
-          className={`nav-item ${activeLink === "#home" ? "bg-white text-gray-900" : ""}`}
-        >
+        <NavItem href="#home" active={activeLink === "#home"}>
           Home
-        </a>
-        <a
-          href="#projects"
-          className={`nav-item ${activeLink === "#projects" ? "bg-white text-gray-900" : ""}`}
-        >
+        </NavItem>
+        <NavItem href="#projects" active={activeLink === "#projects"}>
           Projects
-        </a>
-        <a
-          href="#about"
-          className={`nav-item ${activeLink === "#about" ? "bg-white text-gray-900" : ""}`}
-        >
+        </NavItem>
+        <NavItem href="#about" active={activeLink === "#about"}>
           About
-        </a>
-        <a
-          href="#contact"
-          className={`nav-item ${activeLink === "#contact" ? "bg-white text-gray-900" : ""}`}
-        >
+        </NavItem>
+        <NavItem href="#contact" active={activeLink === "#contact"}>
           Contact
-        </a>
+        </NavItem>
       </nav>
     </div>
   );
 };
+
+const NavItem = ({
+  href,
+  active,
+  children,
+}: {
+  href: string;
+  active: boolean;
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    className={`nav-item ${active ? "bg-white text-gray-900" : ""}`}
+  >
+    {children}
+  </a>
+);

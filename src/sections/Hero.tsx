@@ -9,7 +9,7 @@ import { HeroOrbit } from "@/components/HeroOrbit";
 
 export const HeroSection = () => {
   return (
-    <div className="py-32 md:pb-48 lg:py-32 relative z-0 overflow-x-clip">
+    <div className="py-32 md:pb-48 lg:py-36 relative z-0 overflow-x-clip">
       <div
         id="home"
         className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]"
@@ -124,22 +124,16 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
-            Frontend Web Developer
+            Mohammad Nabiel Dwi Ananda
           </h1>
+
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            I specialize in transforming design into functional, high-performing
-            frontend web applications. Let's discuss your next project.
+            As Frontend Web Developer, I specialize in transforming design into
+            functional, high-performing frontend web applications. Let's discuss
+            your next project.
           </p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <a
-            href="https://drive.google.com/file/d/1rTqxNKob6UUVmR7g0IPXR2WK9GxIO1Mn/view?usp=sharing"
-            target="_blank"
-            className="z-50  inline-flex items-center gap-2 border bg-gray-900 hover:bg-gray-900/75 border-white/15 px-6 h-12 rounded-xl"
-          >
-            <span className="font-semibold">Download CV</span>
-            <ArrowDown className="size-4" />
-          </a>
           <a
             href="https://www.linkedin.com/in/mohammad-nabiel/"
             target="_blank"

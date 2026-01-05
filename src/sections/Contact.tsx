@@ -25,7 +25,7 @@ export const ContactSection = () => {
             </div>
             <div>
               <a
-                href="https://wa.me/6282134188236"
+                href="mailto:muhamad.nabil20052003@gmail.com"
                 target="_blank"
                 className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
               >

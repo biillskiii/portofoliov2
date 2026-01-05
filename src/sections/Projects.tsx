@@ -3,6 +3,7 @@ import darkSaasLandingPage from "@/assets/images/ss.png";
 import lightSaasLandingPage from "@/assets/images/ecommerce.png";
 import aiStartupLandingPage from "@/assets/images/qbills.png";
 import pixelCode from "@/assets/images/image.png";
+import menfessImage from "@/assets/images/menfess.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -62,12 +63,25 @@ const portfolioProjects = [
     link: "https://e-course-phi.vercel.app/",
     image: pixelCode,
   },
+  {
+    company: "Project Mandiri",
+    year: "2025",
+    title: "Menfess Website",
+    results: [
+      { title: "Build Menfess Website to send the anonym messages" },
+      { title: "Made the best score SEO with 100%" },
+      { title: "Build the multiple role with admin, user & user verified" },
+      { title: "Build the best performance on mobile and desktop" },
+    ],
+    link: "https://menfess-unnes.my.id/",
+    image: menfessImage,
+  },
 ];
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
-      <div id="projects" className="container">
+    <section id="projects" className="pb-16 lg:py-24">
+      <div className="container">
         <SectionHeader
           eyebrow="Real-world Result"
           title="Feature Projects"
@@ -102,7 +116,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a target="_blank" href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
