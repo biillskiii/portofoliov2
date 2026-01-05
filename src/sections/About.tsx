@@ -98,7 +98,7 @@ export const AboutSection = () => {
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-2">
-            <Card className="h-[320px] md:col-span-3 lg:col-span-2">
+            <Card className="h-fit pb-7 md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="My Toolbox"
                 description="Explore the technologies and tools I use to craft exceptional digital experiences."
@@ -109,11 +109,11 @@ export const AboutSection = () => {
                 className=""
                 itemsWrapperClassName="animate-move-left [animation-duration:30s]"
               />
-              <ToolboxItems
+              {/* <ToolboxItems
                 items={toolboxItems}
                 className="mt-6"
                 itemsWrapperClassName="animate-move-right [animation-duration:15s]"
-              />
+              /> */}
             </Card>
           </div>
 
