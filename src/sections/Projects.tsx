@@ -7,7 +7,7 @@ import menfessImage from "@/assets/images/menfess.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import shortenerUrl from "@/assets/images/short-url.png";
+import rabGenerator from "@/assets/images/rab.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -38,18 +38,24 @@ const portfolioProjects = [
     company: "Capstone Alterra Academy",
     year: "2023",
     title: "Point of Sales QBills",
-    results: [],
+    results: [
+      {
+        title:
+          "Developed reusable UI components for a Point of Sales (POS) system using Next.js.",
+      },
+      {
+        title:
+          "Implemented product management features (create, update, delete) within the admin dashboard.",
+      },
+      {
+        title:
+          "Built and integrated component logic at both child and parent levels, ensuring seamless state management and data flow.",
+      },
+    ],
     link: "https://qbills.vercel.app/",
     image: aiStartupLandingPage,
   },
-  {
-    company: "Project Mandiri",
-    year: "2024",
-    title: "Shortener Url",
-    results: [],
-    link: "https://shortener-url-six.vercel.app/",
-    image: shortenerUrl,
-  },
+
   {
     company: "CV Serpihan Tech Solution",
     year: "2024",
@@ -75,6 +81,31 @@ const portfolioProjects = [
     ],
     link: "https://menfess-unnes.my.id/",
     image: menfessImage,
+  },
+  {
+    company: "Cerah Slamet Utama",
+    year: "2026",
+    title: "RAB Generator",
+    results: [
+      {
+        title:
+          "Developed an RAB (budget planning) generator using Next.js to assist in estimating house construction costs.",
+      },
+      {
+        title:
+          "Integrated Google Gemini API to generate cost breakdowns through optimized prompting.",
+      },
+      {
+        title:
+          "Incorporated regional material price data (Kab. Temanggung) to ensure realistic estimations.",
+      },
+      {
+        title:
+          "Implemented a 70:30 budget allocation logic (materials vs labor) for structured cost distribution.",
+      },
+    ],
+    link: "https://muliahome-rab.vercel.app/",
+    image: rabGenerator,
   },
 ];
 
