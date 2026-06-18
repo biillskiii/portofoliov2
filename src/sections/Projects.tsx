@@ -8,9 +8,9 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import rabGenerator from "@/assets/images/rab.png";
+import quizFocus from "@/assets/images/quiz.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
-
 const portfolioProjects = [
   {
     company: "ScreenShot",
@@ -83,7 +83,7 @@ const portfolioProjects = [
     image: menfessImage,
   },
   {
-    company: "Cerah Slamet Utama",
+    company: "Project Mandiri",
     year: "2026",
     title: "RAB Generator",
     results: [
@@ -106,6 +106,31 @@ const portfolioProjects = [
     ],
     link: "https://muliahome-rab.vercel.app/",
     image: rabGenerator,
+  },
+  {
+    company: "Project Mandiri",
+    year: "2026",
+    title: "Quiz Website",
+    results: [
+      {
+        title:
+          "Developed a responsive quiz web application using React (functional components & hooks) with clean and maintainable architecture",
+      },
+      {
+        title:
+          "Implemented global state management using Zustand for scalable and efficient state handling",
+      },
+      {
+        title:
+          "Built core quiz features including timer system, dynamic question fetching via API, and error handling (HTTP 429)",
+      },
+      {
+        title:
+          "Designed result summary and answer review features to display scores, correct and incorrect answers clearly",
+      },
+    ],
+    link: "https://quizfocus.vercel.app/",
+    image: quizFocus,
   },
 ];
 
